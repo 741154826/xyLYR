@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    
+  </div>
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="node_modules/vue-router/dist/vue-router.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script>
+    !function () {
+        function a() {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 1440 * 10 / 16 * 1000 + "%"
+        }
+
+        var b = null;
+        window.addEventListener("resize", function () {
+            clearTimeout(b);
+            b = setTimeout(a, 300)
+        }, !1);
+        a()
+    }(window);
+  </script>
+</body>
+</html>

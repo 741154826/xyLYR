@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html,body{
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      height: 100%;
+      position: relative;   
+    }
+    div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      background-image: -webkit-linear-gradient(top, #f3daa7, #e1a670);
+    }
+   /* .btn1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+    .btn2{
+      position: absolute;
+      top: 0;
+      left: 50px;
+      z-index: 999;
+    }*/
+  </style>
+</head>
+<body>
+<!--   <button onclick="btn1()" class="btn1">放大</button>
+  <button onclick="btn2()" class="btn2">缩小</button> -->
+  <div></div>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+    !function () {
+        function a() {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 1440 * 10 / 16 * 1000 + "%"
+        }
+
+        var b = null;
+        window.addEventListener("resize", function () {
+            clearTimeout(b);
+            b = setTimeout(a, 300)
+        }, !1);
+        a()
+    }(window);
+  </script>
+</body>
+</html>
+
+<style>
+/*  div{
+    background-image: linear-gradient(top, #f3daa7, #e1a670);1
+    background-image: linear-gradient(top, #57b2e3, #5e96cd);2
+    background-image: linear-gradient(top, #97c8e9, #9facd3);3
+    
+    background-image: linear-gradient(top, #f2f2f2, #d4d4d4);
+    background-image: linear-gradient(top, #ffbe34, #d2801e);
+    background-image: linear-gradient(top, #f2f2f2, #d4d4d4);
+  }*/
+</style>
